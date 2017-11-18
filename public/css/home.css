@@ -1,0 +1,107 @@
+html,
+body {
+  height: 100% !important;
+}
+
+/* Color pallette */
+
+.main {
+  color: #4CAF50 !important;
+}
+
+.bg-main {
+  background: #4CAF50 !important;
+}
+
+.secondary {
+  color: #009688 !important;
+}
+
+.bg-secondary {
+  background: #009688 !important;
+}
+
+/* Parralax */
+
+.parallax {
+  background: url("/../images/organic.jpg");
+  height: 35rem;
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.nav-link {
+  font-weight: bold;
+}
+
+.nav-item.divider {
+  border-left: 2px solid #bdc3c7;
+  padding-left: .5rem;
+  margin-left: .5rem;
+}
+
+.nav-pills .nav-link.active,
+.nav-pills .show > .nav-link {
+  background-color: #009688;
+}
+
+.btn-info {
+  background-color: #009688;
+}
+
+.underline {
+  border-bottom: 1px solid #eee;
+}
+
+#login {
+  height: 100%;
+  background-color: #009688 !important;
+}
+
+section .leading {
+  font-weight: 300;
+  font-family: "Open Sans", sans-serif;
+  line-height: 1.5;
+  display: block;
+}
+
+section h4 {
+  letter-spacing: 0px;
+  position: relative;
+  display: inline-block;
+  padding-bottom: 10px;
+  font-weight: 300;
+  color: #333;
+  margin-bottom: 20px !important;
+  text-transform: capitalize;
+}
+
+section h4:after {
+  content: "";
+  width: 80px;
+  height: 2px;
+  background-color: #009688;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  margin-left: -40px;
+}
+
+footer h4 {
+  font-weight: 700;
+  margin-bottom: 1rem;
+  font-size: .95rem;
+}
+
+footer .form-group .btn-newsletter {
+  position: absolute;
+  right: 15px;
+  padding: 0px;
+  border: 0px;
+  background-color: transparent;
+  bottom: 11px;
+}
+
