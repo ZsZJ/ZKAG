@@ -73,8 +73,8 @@ class RouteServiceProvider extends ServiceProvider
 
     protected function mapAdminRoutes()
     {
-        Route::prefix('admin')
-            ->middleware('Admin')
+        Route::prefix('cpanel')
+            ->middleware(['web', 'Admin'])
             ->namespace($this->namespace)
             ->group(base_path('routes/admin.php'));
     }
