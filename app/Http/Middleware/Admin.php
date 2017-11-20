@@ -16,9 +16,14 @@ class Admin
      */
     public function handle($request, Closure $next)
     {
+
         if ( Auth::check() && Auth::user()->isAdmin() == 1 )
         {
             return $next($request);
         }
+
+        //Create message to show current user isnt allowed to access this page
+
+        return redirect(route('login'));
     }
 }
