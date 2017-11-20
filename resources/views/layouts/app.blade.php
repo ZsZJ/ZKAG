@@ -32,11 +32,14 @@
             </li>
             @auth
             <li class="nav-item divider">
-                <a class="nav-link" href="logout">
+                <a class="nav-link" href="{{ route('logout') }}" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
                     <span class="fa fa-user"></span>
                     Logout
                 </a>
             </li>
+            <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                {{ csrf_field() }}
+            </form>
             @endauth
             @guest
             <li class="nav-item divider">
