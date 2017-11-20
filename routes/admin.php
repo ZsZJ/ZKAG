@@ -1,5 +1,5 @@
 <?php
 
-Route::get('/', function () {
-    echo "dashboard";
+Route::get('/', function(){
+    echo "admin home route file";
 });

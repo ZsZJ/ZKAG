@@ -23,8 +23,6 @@ class RouteServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        //
-
         parent::boot();
     }
 
@@ -73,9 +71,9 @@ class RouteServiceProvider extends ServiceProvider
 
     protected function mapAdminRoutes()
     {
-        Route::prefix('admin')
-            ->middleware('Admin')
-            ->namespace($this->namespace)
-            ->group(base_path('routes/admin.php'));
+        Route::prefix('cpanel')
+             ->middleware('Admin')
+             ->namespace($this->namespace)
+             ->group(base_path('routes/admin.php'));
     }
 }
