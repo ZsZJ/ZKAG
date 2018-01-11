@@ -20,6 +20,11 @@
     "vue": "^2.1.10"
   },
   "dependencies": {
-    "popper.js": "^1.12.9"
+    "bootstrap-datepicker": "^1.7.1",
+    "datepair.js": "^0.4.15",
+    "fullcalendar": "^3.8.0",
+    "popper.js": "^1.12.9",
+    "simple-line-icons": "^2.4.1",
+    "timepicker": "^1.11.12"
   }
 }

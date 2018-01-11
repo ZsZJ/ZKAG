@@ -39,7 +39,7 @@ class RouteServiceProvider extends ServiceProvider
 
         $this->mapWebRoutes();
 
-        $this->mapAdminRoutes();
+        $this->mapPremiumRoutes();
     }
 
     /**
@@ -71,11 +71,11 @@ class RouteServiceProvider extends ServiceProvider
              ->group(base_path('routes/api.php'));
     }
 
-    protected function mapAdminRoutes()
+    protected function mapPremiumRoutes()
     {
-        Route::prefix('cpanel')
-            ->middleware(['web', 'Admin'])
+        Route::prefix('dashboard')
+            ->middleware(['web', 'Premium'])
             ->namespace($this->namespace)
-            ->group(base_path('routes/admin.php'));
+            ->group(base_path('routes/premium.php'));
     }
 }

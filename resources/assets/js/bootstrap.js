@@ -10,8 +10,16 @@ window._ = require('lodash');
 try {
     window.$ = window.jQuery = require('jquery');
     window.Popper = require('popper.js');
-
     require('bootstrap');
+
+    /**
+     * Calendar plugins
+     */
+    require('fullcalendar');
+    require('bootstrap-datepicker');
+    require('timepicker');
+    // require('datepair.js');
+
 } catch (e) {}
 
 /**

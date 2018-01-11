@@ -16,6 +16,8 @@ class Controller extends BaseController
 
     private function setPrefix(array $trace)
     {
+        dd($trace);
+
         $cname = explode('\\', $trace['class']);
 
         if(array_key_exists($cname[3], Config::get('modules'))) {
@@ -23,13 +25,5 @@ class Controller extends BaseController
         } else {
             $this->pagePrefix = Config::get('modules')['default'];
         }
-    }
-
-    public function cView($page, $data = [], $debugger = false) {
-        $this->setPrefix(debug_backtrace()[1]);
-
-        if($debugger) dd($this->pagePrefix.$page);
-
-        return view($this->pagePrefix.$page);
     }
 }

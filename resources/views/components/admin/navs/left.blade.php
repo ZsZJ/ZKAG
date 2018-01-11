@@ -5,7 +5,7 @@
 
         <ul class="nav" id="side-menu">
             <li class="active">
-                <a href="{{ route('cpanel.index') }}"> <span class="nav-label">Dashboard</span></a>
+                <a href="{{ route('premium.index') }}"> <span class="nav-label">Dashboard</span></a>
             </li>
             <li>
                 <a href="#"> <span class="nav-label">Messages</span><span class="label label-warning pull-right">NEW</span> </a>

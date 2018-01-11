@@ -28,10 +28,10 @@ class User extends Authenticatable
     ];
 
     /**
-     * Check if the user is Admin
+     * Check if the user is Premium User
      *
      */
-    public function isAdmin ()
+    public function isPremiumUser ()
     {
         return $this->roles_id; // this looks for an role_id column in your users table
     }
