@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <title>ZKAG</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
 <!-- Top Navigation Bar -->
@@ -15,23 +15,32 @@
     <div class="collapse navbar-collapse text-uppercase small" id="navbarSupportedContent">
         <ul class="navbar-nav ml-auto">
             <li class="nav-item active">
-                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
             </li>
+            {{--<li class="nav-item">--}}
+                {{--<a class="nav-link" href="#">Nieuws</a>--}}
+            {{--</li>--}}
             <li class="nav-item">
-                <a class="nav-link" href="#">Nieuws</a>
+                <a class="nav-link" href="{{ route('therapeuten') }}">Afspraak maken</a>
             </li>
-            <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    Diensten
-                </a>
-                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item" href="#">Agenda Beheer</a>
-                    <a class="dropdown-item" href="#">Telefoon Dienst</a>
-                    <a class="dropdown-item" href="#">Web Beheer</a>
-                </div>
-            </li>
+            {{--<li class="nav-item dropdown">--}}
+                {{--<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">--}}
+                    {{--Diensten--}}
+                {{--</a>--}}
+                {{--<div class="dropdown-menu" aria-labelledby="navbarDropdown">--}}
+                    {{--<a class="dropdown-item" href="#">Agenda Beheer</a>--}}
+                    {{--<a class="dropdown-item" href="#">Telefoon Dienst</a>--}}
+                    {{--<a class="dropdown-item" href="#">Web Beheer</a>--}}
+                {{--</div>--}}
+            {{--</li>--}}
             @auth
             <li class="nav-item divider">
+                <a class="nav-link" href="{{ route('agenda') }}">
+                    <span class="fa fa-user"></span>
+                    Dashboard
+                </a>
+            </li>
+            <li class="nav-item">
                 <a class="nav-link" href="{{ route('logout') }}" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
                     <span class="fa fa-user"></span>
                     Logout
@@ -49,12 +58,12 @@
                 </a>
             </li>
             @endguest
-            <li class="nav-item">
-                <a class="nav-link" href="#">
-                    <span class="fa fa-search"></span>
-                    Zoeken
-                </a>
-            </li>
+            {{--<li class="nav-item">--}}
+                {{--<a class="nav-link" href="#">--}}
+                    {{--<span class="fa fa-search"></span>--}}
+                    {{--Zoeken--}}
+                {{--</a>--}}
+            {{--</li>--}}
         </ul>
     </div>
 </nav>
@@ -67,8 +76,7 @@
             <div class="col">
                 <h4><strong>ZKAG</strong></h4>
                 <p class="text-muted">
-                    If you use this site regularly and would like to help keep the site on the Internet,
-                    please consider donating a small sum to help pay for the hosting and bandwidth bill.
+                    De grootste onafhankelijke zorgkantoor voor alternatieve geneeswijze van Nederland
                 </p>
             </div>
             <div class="col">
@@ -106,6 +114,9 @@
     </div>
 </footer>
 
-<script src="js/app.js"></script>
+<script src="../js/app.js"></script>
+
+@yield('scripts')
+
 </body>
 </html>

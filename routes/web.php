@@ -15,3 +15,18 @@
 Auth::routes();
 
 Route::get('/', 'HomeController@index');
+
+Route::get('/therapeuten', [
+    'uses' => 'TherapistController@index',
+    'as' => 'therapeuten'
+]);
+
+Route::get('/therapeuten/{id}', [
+    'uses' => 'TherapistController@show',
+    'as' => 'therapeuten.details'
+]);
+
+Route::post('/therapeuten/store', [
+   'uses' => 'TherapistController@store',
+   'as' => 'therapeuten.store'
+]);

@@ -11,6 +11,8 @@ try {
     window.$ = window.jQuery = require('jquery');
     window.Popper = require('popper.js');
     require('bootstrap');
+    require('expose-loader');
+    window.VeeValidate = require('vee-validate');
 
     /**
      * Calendar plugins
@@ -18,7 +20,6 @@ try {
     require('fullcalendar');
     require('bootstrap-datepicker');
     require('timepicker');
-    // require('datepair.js');
 
 } catch (e) {}
 

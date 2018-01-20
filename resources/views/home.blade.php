@@ -92,19 +92,23 @@
                 Wat zeggen onze leden?
             </h4>
         </div>
-        <div class="container py-5">
+        <div class="container py-3">
             <div class="row">
                 <div class="col my-2">
-                    <div class="card rounded-0">
-                        <div class="card-body">
+                    <div class="card rounded-0 border-0">
+                        <div class="card-body text-center">
                             <div class="d-flex">
-                                <strong>24/7 Support</strong>
-                                <span class="ml-auto small align-self-center text-muted">24 okt. 2017</span>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                            </div>x
+                            <div class="row">
+                                <div class="col-12">
+                                    <strong>Praktijk Yolo</strong>
+                                </div>
                             </div>
+
                             <p class="text-muted mt-2">
-                                please consider donating a small sum to help pay for the hosting and bandwidth bill.
+                                Goede service en wordt altijd goed geholpen!
                             </p>
-                            <a href="#" class="small main underline"><strong>Lees Meer</strong></a>
                         </div>
                     </div>
                 </div>
@@ -119,97 +123,16 @@
         </div>
         <div class="container py-5">
             <div class="row">
-                <div class="col-4 my-2">
-                    <div class="card rounded-0">
-                        <div class="card-body">
-                            <div class="d-flex">
-                                <strong>24/7 Support</strong>
-                                <span class="ml-auto small align-self-center text-muted">24 okt. 2017</span>
-                            </div>
-                            <p class="text-muted mt-2">
-                                please consider donating a small sum to help pay for the hosting and bandwidth bill.
-                            </p>
-                            <a href="#" class="small main underline"><strong>Lees Meer</strong></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-4 my-2">
-                    <div class="card rounded-0">
-                        <div class="card-body">
-                            <div class="d-flex">
-                                <strong>24/7 Support</strong>
-                                <span class="ml-auto small align-self-center text-muted">24 okt. 2017</span>
-                            </div>
-                            <p class="text-muted mt-2">
-                                please consider donating a small sum to help pay for the hosting and bandwidth bill.
-                            </p>
-                            <a href="#" class="small main underline"><strong>Lees Meer</strong></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-4 my-2">
-                    <div class="card rounded-0">
-                        <div class="card-body">
-                            <div class="d-flex">
-                                <strong>24/7 Support</strong>
-                                <span class="ml-auto small align-self-center text-muted">24 okt. 2017</span>
-                            </div>
-                            <p class="text-muted mt-2">
-                                please consider donating a small sum to help pay for the hosting and bandwidth bill.
-                            </p>
-                            <a href="#" class="small main underline"><strong>Lees Meer</strong></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-4 my-2">
-                    <div class="card rounded-0">
-                        <div class="card-body">
-                            <div class="d-flex">
-                                <strong>24/7 Support</strong>
-                                <span class="ml-auto small align-self-center text-muted">24 okt. 2017</span>
-                            </div>
-                            <p class="text-muted mt-2">
-                                please consider donating a small sum to help pay for the hosting and bandwidth bill.
-                            </p>
-                            <a href="#" class="small main underline"><strong>Lees Meer</strong></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-4 my-2">
-                    <div class="card rounded-0">
-                        <div class="card-body">
-                            <div class="d-flex">
-                                <strong>24/7 Support</strong>
-                                <span class="ml-auto small align-self-center text-muted">24 okt. 2017</span>
-                            </div>
-                            <p class="text-muted mt-2">
-                                please consider donating a small sum to help pay for the hosting and bandwidth bill.
-                            </p>
-                            <a href="#" class="small main underline"><strong>Lees Meer</strong></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-4 my-2">
-                    <div class="card rounded-0">
-                        <div class="card-body">
-                            <div class="d-flex">
-                                <strong>24/7 Support</strong>
-                                <span class="ml-auto small align-self-center text-muted">24 okt. 2017</span>
-                            </div>
-                            <p class="text-muted mt-2">
-                                please consider donating a small sum to help pay for the hosting and bandwidth bill.
-                            </p>
-                            <a href="#" class="small main underline"><strong>Lees Meer</strong></a>
-                        </div>
-                    </div>
+                <div class="col text-center">
+                    <p class="text-muted">Op dit moment zijn er geen nieuwsberichten beschikbaar.</p>
                 </div>
             </div>
         </div>
     </section>
     <section class="container-fluid bg-dark py-5">
         <div class="text-center text-white">
-            <h2 class="leading">A template can change your website's look & feel</h2>
-            <p class="text-muted">A clean & minimal style features rich template</p>
+            <h2 class="leading">Zorgkantoor Alternatieve Geneeswijze</h2>
+            <p class="text-muted">De grootste onafhankelijke zorgkantoor voor alternatieve geneeswijze van Nederland</p>
         </div>
     </section>
 @endsection

@@ -22,9 +22,12 @@
   "dependencies": {
     "bootstrap-datepicker": "^1.7.1",
     "datepair.js": "^0.4.15",
+    "expose-loader": "^0.7.4",
+    "font-awesome": "^4.7.0",
     "fullcalendar": "^3.8.0",
     "popper.js": "^1.12.9",
     "simple-line-icons": "^2.4.1",
-    "timepicker": "^1.11.12"
+    "timepicker": "^1.11.12",
+    "vee-validate": "^2.0.0-beta.17"
   }
 }

@@ -22,7 +22,7 @@ mix.styles([
 ], 'public/css/style.css');
 
 //Custom premium
-mix.sass('resources/assets/sass/premium_app.scss', 'public/css/premium.css')
+mix.sass('resources/assets/sass/premium/app.scss', 'public/css/premium.css')
     .styles([
         'public/css/premium.css'
     ], 'public/css/premium.css');
