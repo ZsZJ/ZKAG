@@ -10,23 +10,18 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
-
-
 Auth::routes();
 
-Route::get('/', 'HomeController@index');
+Route::group(['middleware' => 'auth'], function () {
+    // Dashboard routing
+    Route::get('/dashboard', 'DashboardController@index');
+    // Calendar routing
+    Route::get('/calendar', 'CalendarController@index');
+    // Routing Resource employees in settings
+    Route::resource('employees', 'EmployeeController');
 
-Route::get('/therapeuten', [
-    'uses' => 'TherapistController@index',
-    'as' => 'therapeuten'
-]);
+});
 
-Route::get('/therapeuten/{id}', [
-    'uses' => 'TherapistController@show',
-    'as' => 'therapeuten.details'
-]);
-
-Route::post('/therapeuten/store', [
-   'uses' => 'TherapistController@store',
-   'as' => 'therapeuten.store'
-]);
+Route::get('/{vue_capture?}', function () {
+    return view('vue.index');
+})->where('vue_capture' , '[\/\w\.-]*');

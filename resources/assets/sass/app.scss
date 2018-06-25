@@ -1,15 +1,21 @@
-
-// Fonts
-@import url("https://fonts.googleapis.com/css?family=Raleway:300,400,600");
-
 // Variables
-@import "variables";
+@import "_variables";
+
+// Vue-Modal
+@import "_vueModal";
 
 // Bootstrap
 @import "~bootstrap/dist/css/bootstrap";
 
-// Datepicker
-@import "~bootstrap-datepicker/dist/css/bootstrap-datepicker";
+.fade-enter-active, .fade-leave-active {
+  transition-property: opacity;
+  transition-duration: .25s;
+}
 
-// Timepicker
-@import "~timepicker/jquery.timepicker";
+.fade-enter-active {
+  transition-delay: .25s;
+}
+
+.fade-enter, .fade-leave-active {
+  opacity: 0
+}

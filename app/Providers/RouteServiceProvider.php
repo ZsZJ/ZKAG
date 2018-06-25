@@ -36,10 +36,7 @@ class RouteServiceProvider extends ServiceProvider
     public function map()
     {
         $this->mapApiRoutes();
-
         $this->mapWebRoutes();
-
-        $this->mapPremiumRoutes();
     }
 
     /**
@@ -69,13 +66,5 @@ class RouteServiceProvider extends ServiceProvider
              ->middleware('api')
              ->namespace($this->namespace)
              ->group(base_path('routes/api.php'));
-    }
-
-    protected function mapPremiumRoutes()
-    {
-        Route::prefix('dashboard')
-            ->middleware(['web', 'Premium'])
-            ->namespace($this->namespace)
-            ->group(base_path('routes/premium.php'));
     }
 }

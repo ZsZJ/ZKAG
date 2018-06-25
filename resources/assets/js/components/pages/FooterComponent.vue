@@ -1,43 +1,38 @@
 <template>
-    <footer class="bg-light py-5">
+    <footer class="bg-dark py-5">
         <div class="container">
             <div class="row">
-                <div class="col">
-                    <h4><strong>ZKAG</strong></h4>
-                    <p class="text-muted">
-                        De grootste onafhankelijke zorgkantoor voor alternatieve geneeswijze van Nederland
+                <div class="col-4">
+                    <h4 class="text-white">
+                        <strong>Zorgkantoor Alternatieve Geneeswijze</strong>
+                    </h4>
+                    <p class="text-muted small">
+                        &copy; {{ currentYear }} ZKAG <br>
+                        Alle rechten voorbehouden.
                     </p>
                 </div>
                 <div class="col">
-                    <h4><strong>Quick Links</strong></h4>
-                    <ul class="list-unstyled">
-                        <li><a href="#" class="btn btn-underline">Changelog</a></li>
-                        <li><a href="#" class="btn btn-underline">Updates</a></li>
-                        <li><a href="#" class="btn btn-underline">News</a></li>
-                        <li><a href="#" class="btn btn-underline">Contact us</a></li>
-                        <li><a href="#" class="btn btn-underline">Bootstrap4 Beta</a></li>
-                    </ul>
-                </div>
-                <div class="col">
-                    <h4><strong>Over ons</strong></h4>
-                    <ul class="list-unstyled">
-                        <li><a href="#" class="btn btn-underline">Changelog</a></li>
-                        <li><a href="#" class="btn btn-underline">Updates</a></li>
-                        <li><a href="#" class="btn btn-underline">News</a></li>
-                        <li><a href="#" class="btn btn-underline">Contact us</a></li>
-                        <li><a href="#" class="btn btn-underline">Bootstrap4 Beta</a></li>
-                    </ul>
-                </div>
-                <div class="col">
-                    <h4><strong>Nieuwsbrief</strong></h4>
-                    <form>
-                        <div class="form-group">
-                            <label for="subscribe">Abonneer op onze nieuwsbrief</label>
-                            <input type="email" class="form-control" placeholder="Email" id="subscribe">
-                            <button type="submit" class="btn-newsletter"><i class="fa fa-paper-plane-o"></i></button>
+                    <div class="row">
+                        <div class="col-12">
+                            <h4 class="text-white">De grootste onafhankelijke zorgkantoor voor alternatieve geneeswijze van Nederland.</h4>
                         </div>
-                    </form>
-                    <span class="text-muted">© Copyright {{ date }}. ZKAG</span>
+                    </div>
+                    <div class="row mt-3">
+                        <div class="col">
+                            <p class="text-muted">Neem contact op</p>
+                            <a class="text-white" href="mailto: info@zkag.nl">info@zkag.nl</a><br>
+                            <a class="text-white" href="callto: +31 6 442 04 693">+31 6 442 04 693</a>
+                        </div>
+                        <div class="col">
+                            <p class="text-muted">
+                                <i class="fab fa-facebook-square mr-3"></i>
+                                <i class="fab fa-google-plus-square mr-3"></i>
+                                <i class="fab fa-twitter-square"></i>
+                            </p>
+                            <a class="text-muted" href="#"> Algemene voorwaarden </a> <br>
+                            <a class="text-muted" href="#"> Privacy beleid </a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -48,12 +43,16 @@
     export default {
       data () {
         return {
-            date : new Date().getFullYear(),
+            currentYear : new Date().getFullYear(),
         }
       }
     }
 </script>
 
 <style scoped>
-
+    footer {
+        bottom: 0;
+        position: absolute;
+        width: 100%;
+    }
 </style>

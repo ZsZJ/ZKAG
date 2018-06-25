@@ -1,5 +1,5 @@
 <!-- template for the modal component -->
-<script type="text/x-template" id="modal-template">
+<template id="modal-template">
   <transition name="modal">
     <div class="modal-mask">
       <div class="modal-wrapper">
@@ -19,9 +19,8 @@
 
           <div class="modal-footer">
             <slot name="footer">
-              default footer
-              <button class="modal-default-button" @click="$emit('close')">
-                OK
+              <button class="modal-default-button btn btn-info" @click="$emit('close')">
+                Sluiten
               </button>
             </slot>
           </div>
@@ -29,4 +28,4 @@
       </div>
     </div>
   </transition>
-</script>
+</template>

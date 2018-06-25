@@ -20,9 +20,3 @@ mix.styles([
     'public/css/app.css',
     'public/css/home.css'
 ], 'public/css/style.css');
-
-//Custom premium
-mix.sass('resources/assets/sass/premium/app.scss', 'public/css/premium.css')
-    .styles([
-        'public/css/premium.css'
-    ], 'public/css/premium.css');

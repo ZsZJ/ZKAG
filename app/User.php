@@ -27,12 +27,13 @@ class User extends Authenticatable
         'password', 'remember_token',
     ];
 
-    /**
-     * Check if the user is Premium User
-     *
-     */
-    public function isPremiumUser ()
+    public function roles()
     {
-        return $this->roles_id; // this looks for an role_id column in your users table
+
+    }
+
+    public function isAdmin()
+    {
+
     }
 }

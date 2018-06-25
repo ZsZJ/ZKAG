@@ -1,3 +1,4 @@
+import swal from 'sweetalert'
 
 window._ = require('lodash');
 
@@ -12,14 +13,6 @@ try {
     window.Popper = require('popper.js');
     require('bootstrap');
     require('expose-loader');
-    window.VeeValidate = require('vee-validate');
-
-    /**
-     * Calendar plugins
-     */
-    require('fullcalendar');
-    require('bootstrap-datepicker');
-    require('timepicker');
 
 } catch (e) {}
 
